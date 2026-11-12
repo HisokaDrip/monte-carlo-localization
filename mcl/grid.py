@@ -118,6 +118,3 @@ class GridMap:
             step = np.maximum(d - slack, 0.5 * self.res)
             t = np.where(done, t, t + step)
         return np.minimum(t, max_range)
-
-    def free_cells_mask(self):
-        return ~self.occ
