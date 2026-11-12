@@ -32,7 +32,7 @@ def main(argv=None):
     ap.add_argument("--steps", type=int, default=200)
     ap.add_argument("--kidnap-at", type=int, default=120, help="teleport the robot at this step (-1 to disable)")
     ap.add_argument("--beams", type=int, default=30)
-    ap.add_argument("--seed", type=int, default=7)
+    ap.add_argument("--seed", type=int, default=9)
     ap.add_argument("--no-augment", action="store_true", help="plain MCL, no random particle injection")
     ap.add_argument("--live", action="store_true", help="redraw the map every step")
     ap.add_argument("--frames", default="0,3,10", help="steps to print a map for (non-live mode)")
